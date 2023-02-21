@@ -15,12 +15,11 @@ function presentarRespuestas(e) {
   });
 
   modalRespuestaBody.innerHTML = `
-    <strong>Nombre Completo:</strong> ${entradas[0]} <br>
-    <strong>Email:</strong> ${entradas[1]} <br>
-    <strong>Asunto:</strong> ${entradas[2]} <br>
-    <strong>Mensaje:</strong> ${entradas[3]} <br> <br>
-
-    <h4 class=text-center>Welcome ${entradas[0]}!!! 👋👋👋</h4>
+    <h4 class=text-center>Welcome ${entradas[0]}!!! 👋👋👋</h4>  
+    <p><strong>Nombre Completo:</strong> ${entradas[0]}</p> 
+    <p><strong>Email:</strong> ${entradas[1]}</p> 
+    <p><strong>Asunto:</strong> ${entradas[2]}</p> 
+    <p><strong>Mensaje:</strong> ${entradas[3]}</p> 
   `;
 
   // Comprobamos que el usuario haya pasado datos
