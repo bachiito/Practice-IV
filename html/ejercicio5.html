@@ -17,7 +17,83 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CSS Personal  -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Scripts -->
+    <script defer src="../scripts/ejercicio5.js"></script>
   </head>
 
-  <body></body>
+  <body class="bg-dark mt-5">
+    <div class="container">
+      <div class="mx-width-800 mx-auto">
+        <h1 class="text-light text-center">
+          Tabla de multiplicar por selección
+        </h1>
+
+        <form class="mt-5" id="formulario-tabla-multiplicar">
+          <div class="form-floating mb-3">
+            <select
+              class="form-select"
+              id="floatingSelect"
+              aria-label="Floating label select example"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7" selected>7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <label for="floatingSelect">Número</label>
+          </div>
+        </form>
+
+        <div class="d-md-flex justify-content-end">
+          <a href="../index.html" class="btn btn-outline-light">Volver</a>
+
+          <!-- Modal Open BUTTON -->
+          <button
+            type="submit"
+            class="btn btn-outline-light ms-3 modal-fire"
+            form="formulario-tabla-multiplicar"
+          >
+            Enviar
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modal-tabla-multiplicar"
+          tabindex="-1"
+          aria-labelledby="modal-tabla-multiplicarLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p
+                  class="modal-title fs-5"
+                  id="modal-tabla-multiplicarLabel"
+                ></p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
