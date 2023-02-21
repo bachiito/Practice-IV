@@ -1,14 +1,14 @@
 /* TABLA */
 
-.table {
-  max-width: 800px;
-}
-
 .table__link {
   display: block;
 }
 
 /* UTILITIES */
+
+.mx-width-800 {
+  max-width: 800px;
+}
 
 .fs-18 {
   font-size: 1.125rem;

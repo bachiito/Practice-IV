@@ -17,7 +17,111 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <!-- CSS Personal  -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- Scripts -->
+    <script defer src="../scripts/ejercicio2.js"></script>
   </head>
 
-  <body></body>
+  <body class="bg-dark mt-5">
+    <div class="container">
+      <div class="mx-width-800 mx-auto">
+        <h1 class="text-light text-center">Sistema de Consulta BMX-01</h1>
+
+        <form class="mt-5" id="formulario-consulta">
+          <div class="d-md-flex justify-content-between gap-2">
+            <div class="form-floating mb-3 flex-grow-1 flex-shrink-1">
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                name="nombre"
+                placeholder="Juan Clase Clase"
+                required
+              />
+              <label for="nombre">Nombre Completo</label>
+            </div>
+
+            <div class="form-floating mb-3 flex-grow-1 flex-shrink-1">
+              <input
+                type="email"
+                class="form-control flex-grow-1 flex-shrink-1"
+                id="email"
+                name="email"
+                placeholder="Juan Clase Clase"
+                required
+              />
+              <label for="email">Correo Electrónico</label>
+            </div>
+
+            <div class="form-floating mb-3 flex-grow-1 flex-shrink-1">
+              <input
+                type="text"
+                class="form-control"
+                id="asunto"
+                name="asunto"
+                placeholder="Juan Clase Clase"
+                required
+              />
+              <label for="asunto">Asunto</label>
+            </div>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea
+              class="form-control"
+              name="mensaje"
+              id="mensaje"
+              cols="100"
+              rows="100"
+              placeholder="Leave a comment here"
+              style="min-height: 200px"
+              required
+            ></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+        </form>
+
+        <div class="d-md-flex justify-content-end">
+          <a href="../index.html" class="btn btn-outline-light">Volver</a>
+
+          <!-- Modal Open BUTTON -->
+          <button
+            type="submit"
+            class="btn btn-outline-light ms-3 modal-fire"
+            form="formulario-consulta"
+          >
+            Enviar
+          </button>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modal-consulta"
+          tabindex="-1"
+          aria-labelledby="modal-consultaLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title fs-5" id="modal-consultaLabel">
+                  Feedback
+                </p>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
