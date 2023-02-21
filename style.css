@@ -1,0 +1,19 @@
+/* TABLA */
+
+.table {
+  max-width: 800px;
+}
+
+.table__link {
+  display: block;
+}
+
+/* UTILITIES */
+
+.fs-18 {
+  font-size: 1.125rem;
+}
+
+.fs-20 {
+  font-size: 1.25rem;
+}
